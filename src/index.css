@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+  
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  /* Scrollbar personalizado */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(243 244 246);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(37 99 235);
+    border-radius: 6px;
+    border: 2px solid rgb(243 244 246);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(29 78 216);
+  }
+
+  /* Scrollbar modo oscuro */
+  .dark ::-webkit-scrollbar-track {
+    background: rgb(17 24 39);
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgb(59 130 246);
+    border-color: rgb(17 24 39);
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: rgb(96 165 250);
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(37 99 235) rgb(243 244 246);
+  }
+
+  .dark * {
+    scrollbar-color: rgb(59 130 246) rgb(17 24 39);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    10%, 30% {
+      transform: rotate(14deg);
+    }
+    20%, 40% {
+      transform: rotate(-8deg);
+    }
+    50% {
+      transform: rotate(14deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-left {
+    animation: fade-in-left 0.6s ease-out forwards;
+  }
+  
+  .animate-wave {
+    animation: wave 2s ease-in-out infinite;
+    display: inline-block;
+    transform-origin: 70% 70%;
+  }
+}
