@@ -1,16 +1,92 @@
-# React + Vite
+# Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page built with React and Vite, featuring a clean design and optimized performance.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fast Development**: Powered by Vite for lightning-fast HMR (Hot Module Replacement)
+- **Modern React**: Built with the latest React features and best practices
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Optimized Performance**: Production-ready with optimized build output
+- **Code Quality**: Pre-configured ESLint for maintaining code standards
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI library for building user interfaces
+- **Vite** - Next-generation frontend build tool
+- **ESLint** - Code linting and quality assurance
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Ninja77797/Landing-page.git
+cd Landing-page
+npm install
+```
+
+## 🚦 Getting Started
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## 🏗️ Build for Production
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+Landing-page/
+├── src/           # Source files
+├── public/        # Static assets
+├── index.html     # Entry HTML file
+└── package.json   # Project dependencies
+```
+
+## 🔧 Configuration
+
+This project uses:
+- **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)** - Uses Babel for Fast Refresh
+- **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc)** - Alternative using SWC for Fast Refresh
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Ninja77797**
+
+- GitHub: [@Ninja77797](https://github.com/Ninja77797)
+
+---
+
+Made with ❤️ using React and Vite
